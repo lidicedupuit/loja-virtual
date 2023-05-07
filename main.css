@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin:0 auto;   
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: aliceblue;
+}
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+}
+footer {
+    background-color: blue;
+    padding-top: 16px;
+    color: #ccc;
+}
+.menu-loja li {
+    float: left; 
+    list-style:none;
+    padding: 16px; 
+    border-top: 4px solid blue;     
+}
+.container img {
+    max-width: 100px;
+    margin-right: 24px;
+}
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 200px;
+    margin-right: 24px;
+}
+section {
+    padding: 48px 0;
+}
+section h2 {
+     margin-bottom: 16px;
+     color: blue;
+}
+.produtos {
+    
+    max-width: 100%;
+    padding: 40px;
+}
+button {
+    display: block;
+    max-width: 360px;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(88, 88, 238);
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+footer li {
+    list-style: none;
+    margin-left:  16px;
+}
+@media screen and (min-width: 768px) and (max-width:1023px){
+    
+        .container {
+            max-width: 50%;
+        }
+        .container-flex .sobre-a-loja p {
+            font-size: 1.5em;
+        }
+        .container-flex .produtos {
+            grid-template-columns: repeat(2, 40%);
+        }
+
+    }
+
